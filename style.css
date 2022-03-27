@@ -13,3 +13,38 @@
     font-size: 25px;
     font-weight: bold;
 }
+
+
+
+/* popup msg */
+#popup_msg_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 550px;
+    height: 350px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: -2;
+}
+#popup_msg_box i{
+    font-size: 100px;
+    color: green;
+}
+
+#popup_msg_box p{
+    font-size: 20px;
+}
+
+#popup_msg_box button{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    
+}
+/* popup msg end */
