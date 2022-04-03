@@ -35,16 +35,23 @@ calculate.addEventListener("click", (e) => {
 
     if(total_asset >= nisab){
         var zakat = (total_asset * 2.5) / 100;
+        popup_msg_box.classList.replace("alert-danger", "alert-success");
         popup_msg_box.style.zIndex = "99";
         popup_msg_box.style.opacity = "1";
+        popup_msg_box.style.transform = "scale(1)";
         achive.classList.replace("fa-circle-xmark", "fa-circle-check");
         achive.style.color = "green";
         msg_title.innerHTML = "অভিনন্দন";
         print_amo.innerHTML = "আপনার জাকাতের পরিমান " + zakat + " টাকা";
         blur_screen.style.display = "block";
-    }else{
+    }
+    
+    
+    else{
+        popup_msg_box.classList.replace("alert-success", "alert-danger");
         popup_msg_box.style.zIndex = "99";
         popup_msg_box.style.opacity = "1";
+        popup_msg_box.style.transform = "scale(1)";
         achive.classList.replace("fa-circle-check", "fa-circle-xmark");
         achive.style.color = "red";
         msg_title.innerHTML = "OPPS!!!";
