@@ -71,6 +71,7 @@ popup_close.addEventListener("click", () => {
 
     popup_msg_box.style.opacity = "0";
     popup_msg_box.style.zIndex = "-2";
+    popup_msg_box.style.transform = "scale(0)";
     blur_screen.style.display = "none";
 });
 
