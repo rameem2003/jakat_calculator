@@ -81,5 +81,8 @@ body{
     #popup_msg_box{
         width: 350px;
     }
+    #popup_msg_box p{
+        font-size: 17px;
+    }
 }
 /* responsive end */

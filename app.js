@@ -24,6 +24,7 @@ calculate.addEventListener("click", (e) => {
     var popup_msg_box = document.getElementById("popup_msg_box");
     var msg_title = document.getElementById("msg_title");
     var print_amo = document.getElementById("print_amo");
+    var print_nisab = document.getElementById("print_nisab");
     var achive = document.querySelector(".achive");
 
 
@@ -42,6 +43,7 @@ calculate.addEventListener("click", (e) => {
         achive.classList.replace("fa-circle-xmark", "fa-circle-check");
         achive.style.color = "green";
         msg_title.innerHTML = "অভিনন্দন";
+        print_nisab.innerHTML = "আপনার নিসাবের পরিমান " + total_asset + " টাকা";
         print_amo.innerHTML = "আপনার জাকাতের পরিমান " + zakat + " টাকা";
         blur_screen.style.display = "block";
     }
@@ -55,6 +57,7 @@ calculate.addEventListener("click", (e) => {
         achive.classList.replace("fa-circle-check", "fa-circle-xmark");
         achive.style.color = "red";
         msg_title.innerHTML = "OPPS!!!";
+        print_nisab.innerHTML = "আপনার নিসাবের পরিমান " + total_asset + " টাকা";
         print_amo.innerHTML = "আপনার জাকাত দেওয়ার মত পর্যাপ্ত নিসাব নাই!! ";
         blur_screen.style.display = "block";
     }
