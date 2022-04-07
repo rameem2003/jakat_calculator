@@ -20,7 +20,7 @@ calculate.addEventListener("click", (e) => {
     
 
     // variable for popup msg
-    var blur_screen = document.getElementById("blur_screen");
+    var app_body = document.getElementById("main_body");
     var popup_msg_box = document.getElementById("popup_msg_box");
     var msg_title = document.getElementById("msg_title");
     var print_amo = document.getElementById("print_amo");
@@ -45,7 +45,8 @@ calculate.addEventListener("click", (e) => {
         msg_title.innerHTML = "অভিনন্দন";
         print_nisab.innerHTML = "আপনার নিসাবের পরিমান " + total_asset + " টাকা";
         print_amo.innerHTML = "আপনার জাকাতের পরিমান " + zakat + " টাকা";
-        blur_screen.style.display = "block";
+        app_body.style.opacity = "0.7";
+        app_body.style.pointerEvents = "none";
     }
     
     
@@ -59,7 +60,8 @@ calculate.addEventListener("click", (e) => {
         msg_title.innerHTML = "OPPS!!!";
         print_nisab.innerHTML = "আপনার নিসাবের পরিমান " + total_asset + " টাকা";
         print_amo.innerHTML = "আপনার জাকাত দেওয়ার মত পর্যাপ্ত নিসাব নাই!! ";
-        blur_screen.style.display = "block";
+        app_body.style.opacity = "0.7";
+        app_body.style.pointerEvents = "none";
     }
 
     
@@ -70,12 +72,12 @@ calculate.addEventListener("click", (e) => {
 
 popup_close.addEventListener("click", () => {
     var popup_msg_box = document.getElementById("popup_msg_box");
-    var blur_screen = document.getElementById("blur_screen");
-
+    var app_body = document.getElementById("main_body");
     popup_msg_box.style.opacity = "0";
     popup_msg_box.style.zIndex = "-2";
     popup_msg_box.style.transform = "scale(0)";
-    blur_screen.style.display = "none";
+    app_body.style.opacity = "1";
+    app_body.style.pointerEvents = "all";
 });
 
 

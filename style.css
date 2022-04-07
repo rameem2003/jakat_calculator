@@ -9,10 +9,14 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    margin-top: 10px;
 }
 
 /* main body */
+#main_body{
+    opacity: 1;
+    pointer-events: all;
+}
 .title{
     font-size: 35px;
 }
@@ -72,9 +76,6 @@ body{
 
 /* responsive */
 @media screen and (max-width: 500px) {
-    #main_body{
-        margin-top: 365px;
-    }
     .title{
         font-size: 25px;
     }
