@@ -7,7 +7,21 @@ ___
 
 <br>
 
-### My website: rameem2003.github.io/rameem.me
+### My website:
+```
+https://rameem2003.github.io/rameem.me/
+```
+
+
+### To visit this site
+```
+https://rameem2003.github.io/jakat_calculator/
+```
+
+<br>
+
+# App interface
+![view](./view.png)
 
 <br>
 
